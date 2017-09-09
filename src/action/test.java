@@ -10,6 +10,7 @@ import java.sql.Statement;
 public class test {
 	public static void main(String[] args) throws Exception{
 		//final String sql = "INSERT INTO my_news(title,content) VALUES('I Love You888','yes!yes!888');";
+		//hello，这是我改的在github上
 		String sql = "SELECT * FROM my_news WHERE title='i love you'";
 		String url = "jdbc:mysql://localhost:3306/solr?characterEncoding=utf8&"
 	            + "user=root&password=root";
