@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="bean.goods.Goods" table="Goods" dynamic-update="false">
+<id name="goodsId">  <!--uuid-->
+<generator class="uuid"/>  
+</id>  
+<property name="goodsName" type="java.lang.String"/>  
+<property name="goodsInPrice" type="java.lang.Integer"/>
+<property name="goodsOutPrice" type="java.lang.Integer"/>
+<property name="goodsCount" type="java.lang.Integer"/> 
+</class>
+</hibernate-mapping>

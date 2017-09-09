@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="bean.employee.Employee" table="Employee" dynamic-update="false">
+<id name="number" type="java.lang.Integer">  <!--uuid-->
+<generator class="identity"/>  
+</id>  
+<property name="name" type="java.lang.String"/>  
+<!-- <property name="number" type="java.lang.Integer"/>  -->
+<property name="sex" type="java.lang.String"/> 
+<property name="idCardNumber" type="java.lang.String"/> 
+<property name="inaugurationTime" type="java.lang.String"/> 
+</class>
+</hibernate-mapping>
